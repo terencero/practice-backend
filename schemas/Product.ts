@@ -10,6 +10,7 @@ export const Product = list({
       ui: {
         displayMode: 'textarea',
       },
+      defaultValue: '',
     }),
     status: select({
       options: [
@@ -24,7 +25,6 @@ export const Product = list({
       },
     }),
     price: integer(),
-    // TODO: Photo
     photo: relationship({
       ref: 'ProductImage.product',
       ui: {
